@@ -11,17 +11,17 @@ const nodes = [
 
 export function HeroVisual() {
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[560px] min-h-[320px] overflow-hidden rounded-[36px] border border-white/10 bg-[#0d0f12] p-3 shadow-2xl shadow-black/50 noise sm:p-6">
+    <div className="relative mx-auto aspect-square w-full max-w-[560px] min-h-[320px] overflow-hidden rounded-[36px] border border-[color:var(--line)] bg-[color:var(--panel)] p-3 shadow-[0_20px_70px_rgba(200,90,0,0.16)] noise sm:p-6">
       <div className="grid-bg absolute inset-0" />
       <motion.div
-        className="absolute inset-[16%] rounded-full border border-[#ff5b1f]/30 sm:inset-[19%]"
+        className="absolute inset-[16%] rounded-full border border-[color:var(--accent-border)] sm:inset-[19%]"
         animate={{ rotate: 360 }}
         transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
       >
-        <div className="absolute left-1/2 top-[-4px] size-2.5 -translate-x-1/2 rounded-full bg-[#ff5b1f] shadow-[0_0_20px_#ff5b1f] sm:top-[-6px] sm:size-3" />
+        <div className="absolute left-1/2 top-[-4px] size-2.5 -translate-x-1/2 rounded-full bg-[color:var(--accent)] shadow-[0_0_20px_rgba(255,179,71,0.35)] sm:top-[-6px] sm:size-3" />
       </motion.div>
 
-      <div className="absolute inset-[24%] rounded-[24px] border border-white/10 bg-white/[.045] p-4 backdrop-blur sm:inset-[31%] sm:p-6">
+      <div className="absolute inset-[24%] rounded-[24px] border border-[color:var(--line)] bg-[color:var(--panel-strong)] p-4 backdrop-blur sm:inset-[31%] sm:p-6">
         <div className="eyebrow">mybizz core</div>
         <div className="display mt-2 text-xl font-bold leading-tight sm:mt-3 sm:text-3xl">
           One aligned delivery system.
@@ -35,7 +35,7 @@ export function HeroVisual() {
           animate={{ y: [0, -7, 0] }}
           transition={{ duration: 4 + i * 0.4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <n.icon className="size-3.5 text-[#ff6c35] sm:size-4" />
+          <n.icon className="size-3.5 text-[color:var(--accent)] sm:size-4" />
           {n.label}
         </motion.div>
       ))}
