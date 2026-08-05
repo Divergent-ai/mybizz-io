@@ -59,3 +59,4 @@ Use Node 20.9+ and place a reverse proxy/CDN in front of the app.
 - CSS texture and SVG assets avoid stock imagery and heavy media.
 - Font optimisation via `next/font`.
 - Contact endpoint includes schema validation and a honeypot.
+# mybizz
